@@ -65,26 +65,16 @@ Y= A⊕B
 **PROGRAM**
 
 ```
-module Basic_gates(
-
-input A,B,
-
-output y0,y1,y2,y3,y4,y5
-
-);
-
-and g1(y0,A,B);
-
-or g2(y1,A,B);
-
-not g3(y2,A);
-
-nand g4(y3,A,B);
-
-nor g5(y4,A,B);
-
-xor g6(y5,A,B);
-
+module log_gat(a,b,c1,c2,c3,c4,c5,c6,c7);
+input a,b;
+output c0,c1,c2,c3,c4,c5,c6,c7;
+not g1(c1,a);
+and g2(c2,a,b);
+or g3(c3,a,b);
+nand g4(c4,a,b);
+nor g5(c5,a,b);
+xor g6(c6,a,b);
+xnor g7(c7,a,b);
 endmodule
 ```
 
@@ -93,14 +83,16 @@ Program for logic gates and verify its truth table in quartus using Verilog prog
  Developed by: Yogesh A R RegisterNumber: 25017941
  
 **Logic symbol & Truthtable**
-<img width="899" height="597" alt="Screenshot_2025-11-21_204822 1" src="https://github.com/user-attachments/assets/cb2bd3b9-72f9-42a2-8d15-8d85832dd3c6" />
+<img width="595" height="676" alt="de2" src="https://github.com/user-attachments/assets/9554c194-20f1-4241-9886-0319de8fb240" />
 
 **RTL realization Output:** 
-<img width="748" height="491" alt="Screenshot 2025-11-20 185017" src="https://github.com/user-attachments/assets/5218d38b-fa90-4eab-a34a-66a20d10b7c9" />
+<img width="1920" height="1080" alt="Screenshot (102)" src="https://github.com/user-attachments/assets/cb8536fc-6268-4458-85a5-7f4365431d91" />
 
 **RTL**
+<img width="1857" height="848" alt="de1" src="https://github.com/user-attachments/assets/e992f412-89e7-4748-821d-09d39cba9f08" />
 
 **Result:**
-<img width="1920" height="1080" alt="Screenshot (38)" src="https://github.com/user-attachments/assets/5bb1c483-28c8-4c1a-9975-a45bac667213" />
+The basic logic gates are studied and the truth tables are verified
+
 
 
